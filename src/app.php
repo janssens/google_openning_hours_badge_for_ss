@@ -35,10 +35,12 @@ if (isset($argv[2]) && $argv[2] == 'html'){
 if ($format === 'json'){// json
     echo json_encode($data->result->opening_hours);
 }else{//html
+    echo '<html><head><meta charset="UTF-8"></head><body>';
     echo '<ul>';
     foreach ($data->result->opening_hours->weekday_text as $wt){
         echo '<li>'.$wt.'</li>';
     }
     echo '</ul>';
+    echo '</body></html>';
 }
 die();
