@@ -1,0 +1,19 @@
+{
+    "name": "janssens/google_openning_hours_badge_for_ss",
+    "description": "Uses php and google place api to load place openning hours as json string",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Janssens\\GoogleOpenningHoursBadge4Ss\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gaetan janssens",
+            "email": "janssensgaetan@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    }
+}
